@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Video Downloader</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>📥 Video Downloader</h1>
+        <p>Support: Facebook Reels, Instagram, Twitter/X</p>
+        <div class="input-group">
+            <input type="url" id="videoUrl" placeholder="Tempelkan URL video di sini..." />
+            <button id="downloadBtn">Cari Video</button>
+        </div>
+        <div id="loading" class="hidden">⏳ Mengambil data...</div>
+        <div id="result" class="hidden">
+            <video id="previewVideo" controls></video>
+            <a id="downloadLink" download="video.mp4">⬇️ Download Video</a>
+        </div>
+        <div id="error" class="hidden error-msg"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
